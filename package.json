@@ -1,0 +1,14 @@
+{
+  "name": "docchat",
+  "private": true,
+  "packageManager": "pnpm@12.16.1",
+  "scripts": {
+    "dev:api": "cd apps/api && uv run uvicorn app.main:app --reload --port 8000",
+    "dev:web": "pnpm --filter web dev",
+    "dev": "concurrently -n api,web -c blue,green \"pnpm dev:api\" \"pnpm dev:web\"",
+    "gen:types": "pnpm --filter api-client generate"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}

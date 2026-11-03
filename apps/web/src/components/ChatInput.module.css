@@ -1,0 +1,50 @@
+.form {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  resize: none;
+}
+
+.input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -1px;
+}
+
+.input:disabled {
+  opacity: 0.6;
+}
+
+.send {
+  padding: 0.6rem 1rem;
+  border: 0;
+  border-radius: 10px;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-size: 0.9375rem;
+  cursor: pointer;
+}
+
+.stop {
+  background: var(--danger-solid);
+}
+
+.send:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}

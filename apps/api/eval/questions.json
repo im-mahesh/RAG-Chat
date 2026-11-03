@@ -1,0 +1,22 @@
+[
+  {"question": "What does the VPN error E4012 mean?", "expected_filename": "acmevpn-admin-guide.md", "expected_text_snippet": "client certificate has expired"},
+  {"question": "Which VPN error appears when my laptop's clock is out of sync?", "expected_filename": "acmevpn-admin-guide.md", "expected_text_snippet": "device clock is more than five minutes out of sync"},
+  {"question": "What does error E3100 mean?", "expected_filename": "acmesync-client-guide.md", "expected_text_snippet": "locked by another process"},
+  {"question": "How much can I be reimbursed for food in a day while travelling for work?", "expected_filename": "expense-policy.md", "expected_text_snippet": "$75 per day"},
+  {"question": "How long do I have to turn in my receipts?", "expected_filename": "expense-policy.md", "expected_text_snippet": "within 30 days of the purchase date"},
+  {"question": "How long do approvers have to respond to a travel request?", "expected_filename": "travel-booking-guide.md", "expected_text_snippet": "within 2 business days"},
+  {"question": "What is the nightly hotel limit in San Francisco?", "expected_filename": "travel-booking-guide.md", "expected_text_snippet": "$320 per night"},
+  {"question": "How quickly must the on-call engineer acknowledge a page?", "expected_filename": "incident-response-runbook.md", "expected_text_snippet": "within 5 minutes"},
+  {"question": "By when must the engineering postmortem for a SEV1 be published?", "expected_filename": "incident-response-runbook.md", "expected_text_snippet": "within 5 business days"},
+  {"question": "What command do I run to promote the standby database?", "expected_filename": "incident-response-runbook.md", "expected_text_snippet": "dbctl promote db-replica-2"},
+  {"question": "What is the recovery point objective for the primary database?", "expected_filename": "backup-and-disaster-recovery.md", "expected_text_snippet": "recovery point objective for the primary database is 15 minutes"},
+  {"question": "By when do I need to choose my health insurance after I join?", "expected_filename": "employee-onboarding.txt", "expected_text_snippet": "health, dental and vision plans"},
+  {"question": "What is the current rate limit for the Pro plan?", "expected_filename": "public-api-reference.md", "expected_text_snippet": "the Pro plan 600 requests per minute"},
+  {"question": "How many times is a failed webhook retried?", "expected_filename": "public-api-reference.md", "expected_text_snippet": "up to 5 times with exponential backoff"},
+  {"question": "How long does an Idempotency-Key stay valid?", "expected_filename": "public-api-reference.md", "expected_text_snippet": "within 24 hours"},
+  {"question": "How long are application logs retained?", "expected_filename": "data-retention-and-privacy.md", "expected_text_snippet": "Application logs are kept for 90 days"},
+  {"question": "How soon must regulators be told about a data breach?", "expected_filename": "data-retention-and-privacy.md", "expected_text_snippet": "within 72 hours"},
+  {"question": "Which encryption algorithm protects data at rest?", "expected_filename": "data-retention-and-privacy.md", "expected_text_snippet": "AES-256"},
+  {"question": "What should I do right away if my work laptop is stolen?", "expected_filename": "device-security-policy.md", "expected_text_snippet": "within 1 hour of noticing"},
+  {"question": "Can I get a refund if I cancel soon after subscribing to Pro?", "expected_filename": "pricing-and-billing.md", "expected_text_snippet": "refunded in full within 14 days"}
+]

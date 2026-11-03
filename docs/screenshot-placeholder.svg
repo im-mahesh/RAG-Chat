@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-label="Screenshot placeholder">
+  <rect width="1200" height="675" fill="#1e1e21"/>
+  <rect x="0" y="0" width="300" height="675" fill="#26262a"/>
+  <rect x="24" y="64" width="252" height="90" rx="10" fill="none" stroke="#4b4b52" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="24" y="40" font-family="system-ui, sans-serif" font-size="20" font-weight="600" fill="#f5f5f7">Documents</text>
+  <rect x="324" y="96" width="420" height="60" rx="14" fill="#6366f1" opacity="0.0"/>
+  <rect x="780" y="64" width="360" height="52" rx="14" fill="#6366f1"/>
+  <rect x="324" y="150" width="640" height="150" rx="14" fill="#2c2c30"/>
+  <text x="600" y="400" text-anchor="middle" font-family="system-ui, sans-serif" font-size="34" fill="#98989d">Screenshot placeholder</text>
+  <text x="600" y="446" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" fill="#6e6e73">Replace with docs/screenshot.png and update the README image link</text>
+</svg>

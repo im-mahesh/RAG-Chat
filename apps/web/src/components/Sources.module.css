@@ -1,0 +1,16 @@
+.sources {
+  margin-top: 0.625rem;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.sources summary {
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}

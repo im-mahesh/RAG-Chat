@@ -1,0 +1,24 @@
+.layout {
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
+  height: 100dvh;
+}
+
+/* Wide screens: the source panel is a third column. */
+.layout[data-panel='true'] {
+  grid-template-columns: 300px minmax(0, 1fr) 380px;
+}
+
+/* Below this the panel is an overlay, so it takes no column. */
+@media (max-width: 1100px) {
+  .layout[data-panel='true'] {
+    grid-template-columns: 300px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .layout,
+  .layout[data-panel='true'] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

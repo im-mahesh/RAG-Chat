@@ -1,0 +1,43 @@
+# Runs the API and the web UI.
+#   docker compose up --build
+# Then open http://localhost:5173. Settings are read from your shell or from a
+# .env file next to this one (see .env.example); ./data holds the vector store
+# and the downloaded models, so documents survive restarts.
+services:
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      RETRIEVAL_MODE: ${RETRIEVAL_MODE:-hybrid}
+      RERANK: ${RERANK:-false}
+      RETRIEVAL_CANDIDATES: ${RETRIEVAL_CANDIDATES:-20}
+      RATE_LIMIT_PER_MINUTE: ${RATE_LIMIT_PER_MINUTE:-20}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173}
+      CHROMA_PATH: /data/chroma
+      HF_HOME: /data/hf
+    volumes:
+      - ./data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health', timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 120s # the first start downloads the embedding model
+    restart: unless-stopped
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      args:
+        VITE_API_URL: ${VITE_API_URL:-http://localhost:8000}
+    ports:
+      - "5173:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped

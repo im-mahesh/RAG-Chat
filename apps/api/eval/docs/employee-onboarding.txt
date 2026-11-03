@@ -1,0 +1,31 @@
+New Employee Onboarding Handbook
+
+Welcome to the team. This handbook walks through your first weeks so you know what to expect and who can help.
+
+Your first week
+
+On your first day you will meet your manager and your onboarding buddy, collect your equipment and get access to the tools you need. The rest of the week is for reading, setting up your development environment and shadowing teammates. Nobody expects you to ship anything yet.
+
+Equipment
+
+Your laptop is shipped to your home address a few days before you start and arrives with the disk already encrypted. Sign in with the temporary password in your welcome email and change it immediately. You also receive a one-time remote work stipend of $500 to spend on a monitor, chair or other home office items; keep the receipts for finance.
+
+Security training
+
+Complete the mandatory security awareness course within 14 days of your start date. The course takes about 90 minutes and ends with a short quiz. Access to production systems is only granted after the course is complete.
+
+Benefits enrollment
+
+You must choose your health, dental and vision plans within 30 days of your start date. If you do not enrol in that window you will have to wait for the next annual open enrolment period. Your manager cannot extend the deadline, so ask the people team early if you have questions.
+
+Time off
+
+Full-time employees accrue 1.5 vacation days per month, starting from the first month. Unused days roll over up to a maximum of 15 days. Public holidays are in addition to vacation days. Request time off through the people portal and tell your manager before you book travel.
+
+The 30-60-90 plan
+
+Your manager will agree three goals with you. By day 30 you should understand the team's codebase and processes. By day 60 you should have delivered a small project end to end. By day 90 you should be working independently and helping to review other people's work.
+
+Your onboarding buddy
+
+Your buddy is a teammate who is not your manager. They answer the questions that feel too small to ask anyone else, such as where to find the best documentation or how code review works in practice. Meet them for thirty minutes every week during your first two months.

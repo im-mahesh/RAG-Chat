@@ -1,0 +1,79 @@
+.message {
+  display: flex;
+}
+
+.user {
+  justify-content: flex-end;
+}
+
+.bubble {
+  max-width: min(720px, 90%);
+  padding: 0.625rem 0.875rem;
+  border-radius: 14px;
+  background: var(--assistant-bubble);
+}
+
+.user .bubble {
+  background: var(--accent);
+  color: #fff;
+}
+
+.error .bubble {
+  border: 1px solid var(--error);
+  background: none;
+  color: var(--error);
+}
+
+.text {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.note {
+  margin: 0.25rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+}
+
+.dots {
+  display: inline-flex;
+  gap: 4px;
+  padding: 0.25rem 0;
+}
+
+.dots span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+.dots span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.dots span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes pulse {
+  0%,
+  80%,
+  100% {
+    opacity: 0.25;
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dots span {
+    animation: none;
+    opacity: 0.6;
+  }
+}
